@@ -3,19 +3,23 @@ Task: You have just made a commit but realize you forgot to include a file and m
 Steps:
 
 1.Create and commit initial files.
+
 -> echo "Initial content" > file1.txt
    echo "Initial content" > file2.txt
    git add file1.txt file2.txt
    git commit -m "Initial commit"
    
 2.Make additional changes.
+
 -> echo "Forgotten content" > file3.txt
    echo "Corrected typo" > file1.txt
 
 3.Stage the changes and amend the last commit.
+
 -> git add file3.txt file1.txt
    git commit --amend --no-edit
    "The --amend option allows you to modify the last commit, and --no-edit keeps the existing commit message unchanged."
 
 4.Verify the amended commit by checking the commit log.
+
 -> git log
