@@ -1,0 +1,23 @@
+Task: You made a mistake in a recent commit and need to revert the changes.
+
+Steps:
+
+1.Create a file and commit changes to the file.
+
+-> echo "Initial content" > example.txt
+   git add example.txt
+   git commit -m "Add example.txt with initial content"
+
+2.Make another commit with a mistake.
+
+-> echo "Mistake content" >> example.txt
+   git add example.txt
+   git commit -m "Add mistake content to example.txt"
+
+3.Revert to the previous commit, undoing the mistake.
+
+-> git revert HEAD
+
+4.Verify the state of the repository to ensure the revert was successful.
+
+-> git log
