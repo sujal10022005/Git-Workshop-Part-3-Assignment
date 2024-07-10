@@ -1,0 +1,28 @@
+Task: You have made changes on a feature branch and want to merge them into the main branch via a pull request.
+
+Steps:
+
+1.Create a new branch from the main branch and make changes.
+
+-> git checkout main
+  git pull origin main
+  git checkout -b feature-branch
+  echo "New feature content" > feature.txt
+  git add feature.txt
+  git commit -m "Add new feature to feature.txt"
+
+2.Push the branch to the remote repository.
+
+-> git push origin feature
+
+3.Create a pull request to merge your feature branch into the main branch.
+
+-> Go to your repository on the remote hosting service.
+   Navigate to the "Pull Requests" tab.
+   Click "New Pull Request."
+   Select the main branch as the base branch and feature-branch as the compare branch.
+   Review the changes, add a title, and describe the changes.
+
+4.Describe the changes in the pull request.
+
+-> "this gives factorial of a number"
