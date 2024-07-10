@@ -1,0 +1,28 @@
+Task: You are working on a feature but need to quickly switch to another task without committing your current changes.
+
+Steps:
+
+1.Make changes to a file but do not commit them.
+
+-> echo "Working on feature" > feature3.txt
+   git add feature3.txt
+
+2.Stash the changes.
+
+-> git stash
+
+3.Verify that your working directory is clean.
+
+-> git status
+
+4.Apply the stashed changes back.
+
+-> git stash apply
+
+5.Experiment with other stash commands like stash list, stash pop, and stash drop.
+
+-> git stash list-This command shows all stashed changes with an index number.
+
+   git stash pop-This applies the most recent stash and removes it from the stash list.
+
+   git stash drop stash@{0}-Replace stash@{0} with the appropriate index if you want to drop a specific stash.
